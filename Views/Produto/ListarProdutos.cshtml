@@ -1,0 +1,23 @@
+﻿@page
+@model CardapioWeb.Views.produtoModel
+@{
+	ViewData["Title"] = "ListarProdutos"; 
+}
+
+<h1>ListarProdutos</h1>
+
+<p>
+	<a asp-asp-page="Create">Create New</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Produto[0].Nome)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Produto[0].descricao_curta)
+			</th>
+		</tr>
+	</thead>
+</table>
